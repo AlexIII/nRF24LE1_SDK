@@ -54,5 +54,8 @@ uint16_t uart_calc_s0rel_value(uint32_t desired_baud_rate, bool smod_bit_value)
 	//               64 * desired_baud_rate
 	//
 	//The formula below also rounds to the nearest whole number
-	return (uint16_t)(1024 - (((((uint32_t)(2 * ((smod_bit_value != 0) ? 2 : 1) * pwr_clk_mgmt_get_cclk_freq_in_hz())) / ((uint32_t)(64 * desired_baud_rate))) + 1) / 2));
+	return (uint16_t)(1024 - (((
+            ((uint32_t)(2 * ((smod_bit_value != 0) ? 2 : 1) * pwr_clk_mgmt_get_cclk_freq_in_hz()))
+            / ((uint32_t)(64 * desired_baud_rate))
+        ) + 1) / 2));
 }

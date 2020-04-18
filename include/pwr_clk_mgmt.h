@@ -336,7 +336,7 @@
 #define pwr_clk_mgmt_enter_pwr_mode_standby()					PWRDWN = PWR_CLK_MGMT_PWRDWN_MODE_STANDBY			//Enter standby mode
 
 #define pwr_clk_mgmt_is_cclk_src_xosc16m()						((CLKLFCTRL & CLKLFCTRL_IS_CLKLF_SRC_XOSC16M) ? true : false)	//True if CCLK source is XOSC16M, false otherwise
-#define pwr_clk_mgmt_is_cclk_src_rcosc16m()						(!pwr_clk_mgmt_is_clklf_src_xosc16m())							//True if CCLK source is RCOSC16M, false otherwise
+#define pwr_clk_mgmt_is_cclk_src_rcosc16m()						(!pwr_clk_mgmt_is_cclk_src_xosc16m())							//True if CCLK source is RCOSC16M, false otherwise
 #define pwr_clk_mgmt_wait_until_cclk_src_is_xosc16m()			while(pwr_clk_mgmt_is_cclk_src_rcosc16m())						//Halts processor until XOSC16M is running CCLK
 
 #define pwr_clk_mgmt_is_clklf_ready()							(CLKLFCTRL & CLKLFCTRL_IS_CLKLF_READY ? true : false)			//True if CLKLF is ready, false otherwise

@@ -56,7 +56,7 @@
 #define timer0_has_overflown()			(TCON_SB_TF0)				//True if timer 0 has overflown, false otherwise
 #define timer0_clear_overflow_flag()	sbit_clear(TCON_SB_TF0)		//Clear timer 0 overflow flag (auto-cleared if using an IRQ)
 #define timer0_set_t0_val(period)		T0 = period					//Update the value of TH0:TL0
-
+#define timer0_set_reload_val(val)      TH0 = val
 
 ////////////////////////////
 // Function prototypes

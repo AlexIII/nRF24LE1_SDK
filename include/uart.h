@@ -144,6 +144,6 @@ void uart_send_wait_for_complete(uint8_t tx_data);
 uint8_t uart_wait_for_rx_and_get();
 
 // Allow stdio printf to output to uart
-void putchar(char c);
+int putchar(int c);
 
 #endif /*UART_H_*/

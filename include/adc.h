@@ -44,40 +44,40 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Configuration defines for use in adc_configure() function...OR these together to form the adc_config_options argument
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#define ADC_CONFIG_OPTION_ACQ_TIME_750_NS						((0x00 << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 750 ns
-#define ADC_CONFIG_OPTION_ACQ_TIME_3_US							((0x01 << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 3 us
-#define ADC_CONFIG_OPTION_ACQ_TIME_12_US						((0x02 << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 12 us
-#define ADC_CONFIG_OPTION_ACQ_TIME_36_US						((0x03 << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 36 us
+#define ADC_CONFIG_OPTION_ACQ_TIME_750_NS						((0x00U << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 750 ns
+#define ADC_CONFIG_OPTION_ACQ_TIME_3_US							((0x01U << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 3 us
+#define ADC_CONFIG_OPTION_ACQ_TIME_12_US						((0x02U << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 12 us
+#define ADC_CONFIG_OPTION_ACQ_TIME_36_US						((0x03U << ADCCON2_ACQ_TIME_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)		//Sets the ADC acquisition time to 36 us
 
-#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_2_KSPS		((0x00 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 2 ksps
-#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_4_KSPS		((0x01 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 4 ksps
-#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_8_KSPS		((0x02 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 8 ksps
-#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_16_KSPS		((0x03 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 16 ksps
+#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_2_KSPS		((0x00U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 2 ksps
+#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_4_KSPS		((0x01U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 4 ksps
+#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_8_KSPS		((0x02U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 8 ksps
+#define ADC_CONFIG_OPTION_CONTINUOUS_SAMPLING_RATE_16_KSPS		((0x03U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using continuous sampling, sets sample rate to 16 ksps
 
-#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_0_US		((0x00 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, sets power down delay after conversion to 0 us
-#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_16_US	((0x01 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, sets power down delay after conversion to 16 us
-#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_24_US	((0x02 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, sets power down delay after conversion to 24 us
-#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_INF		((0x03 << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, leaves ADC powered up after conversion
+#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_0_US		((0x00U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, sets power down delay after conversion to 0 us
+#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_16_US	((0x01U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, sets power down delay after conversion to 16 us
+#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_24_US	((0x02U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, sets power down delay after conversion to 24 us
+#define ADC_CONFIG_OPTION_SINGLE_STEP_POWER_DOWN_DELAY_INF		((0x03U << ADCCON2_SAMPLING_RATE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//When using single step sampling, leaves ADC powered up after conversion
 
-#define ADC_CONFIG_OPTION_SAMPLING_CONTINUOUS					((ADCCON2_CONTINUOUS_SAMPLING) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)			//Sets the ADC to sample continuously
+#define ADC_CONFIG_OPTION_SAMPLING_CONTINUOUS					((uint16_t)(ADCCON2_CONTINUOUS_SAMPLING) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)			//Sets the ADC to sample continuously
 #define ADC_CONFIG_OPTION_SAMPLING_SINGLE_STEP					(0)																					//Sets the ADC to sample once
 
-#define ADC_CONFIG_OPTION_SAMPLING_MODE_SINGLE_ENDED			((0x00 << ADCCON2_SAMPLING_MODE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//Sets the ADC to sample in single-ended mode
-#define ADC_CONFIG_OPTION_SAMPLING_MODE_DIFFERENTIAL_WITH_AIN2	((0x01 << ADCCON2_SAMPLING_MODE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//Sets the ADC to sample in differential mode with AIN2 as the other input
-#define ADC_CONFIG_OPTION_SAMPLING_MODE_DIFFERENTIAL_WITH_AIN6	((0x02 << ADCCON2_SAMPLING_MODE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//Sets the ADC to sample in differential mode with AIN6 as the other input
+#define ADC_CONFIG_OPTION_SAMPLING_MODE_SINGLE_ENDED			((0x00U << ADCCON2_SAMPLING_MODE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//Sets the ADC to sample in single-ended mode
+#define ADC_CONFIG_OPTION_SAMPLING_MODE_DIFFERENTIAL_WITH_AIN2	((0x01U << ADCCON2_SAMPLING_MODE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//Sets the ADC to sample in differential mode with AIN2 as the other input
+#define ADC_CONFIG_OPTION_SAMPLING_MODE_DIFFERENTIAL_WITH_AIN6	((0x02U << ADCCON2_SAMPLING_MODE_SHIFT) << ADC_CONFIG_OPTION_ADCCON2_OFFSET_SHIFT)	//Sets the ADC to sample in differential mode with AIN6 as the other input
 
-#define ADC_CONFIG_OPTION_RESULT_JUSTIFICATION_RIGHT			(ADCCON3_RESULT_RIGHT_JUSTIFIED << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Aligns the ADC output in ADCDAT to the right
+#define ADC_CONFIG_OPTION_RESULT_JUSTIFICATION_RIGHT			((uint16_t)ADCCON3_RESULT_RIGHT_JUSTIFIED << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Aligns the ADC output in ADCDAT to the right
 #define ADC_CONFIG_OPTION_RESULT_JUSTIFICATION_LEFT				(0)																					//Aligns the ADC output in ADCDAT to the left
 
-#define ADC_CONFIG_OPTION_RESOLUTION_6_BITS						((0x00 << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 6 bits of resolution
-#define ADC_CONFIG_OPTION_RESOLUTION_8_BITS						((0x01 << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 8 bits of resolution
-#define ADC_CONFIG_OPTION_RESOLUTION_10_BITS					((0x02 << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 10 bits of resolution
-#define ADC_CONFIG_OPTION_RESOLUTION_12_BITS					((0x03 << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 12 bits of resolution
+#define ADC_CONFIG_OPTION_RESOLUTION_6_BITS						((0x00U << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 6 bits of resolution
+#define ADC_CONFIG_OPTION_RESOLUTION_8_BITS						((0x01U << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 8 bits of resolution
+#define ADC_CONFIG_OPTION_RESOLUTION_10_BITS					((0x02U << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 10 bits of resolution
+#define ADC_CONFIG_OPTION_RESOLUTION_12_BITS					((0x03U << ADCCON3_BIT_RES_SHIFT) << ADC_CONFIG_OPTION_ADCCON3_OFFSET_SHIFT)			//Sets the ADC to 12 bits of resolution
 
-#define ADC_CONFIG_OPTION_REF_SELECT_INT_1_2V					((0x00 << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use the internal 1.2V reference as the ADC reference voltage
-#define ADC_CONFIG_OPTION_REF_SELECT_VDD						((0x01 << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use VDD as the ADC reference voltage
-#define ADC_CONFIG_OPTION_REF_SELECT_EXT_AIN3					((0x02 << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use AIN3 as the ADC reference voltage
-#define ADC_CONFIG_OPTION_REF_SELECT_EXT_AIN9					((0x03 << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use AIN9 as the ADC reference voltage
+#define ADC_CONFIG_OPTION_REF_SELECT_INT_1_2V					((0x00U << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use the internal 1.2V reference as the ADC reference voltage
+#define ADC_CONFIG_OPTION_REF_SELECT_VDD						((0x01U << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use VDD as the ADC reference voltage
+#define ADC_CONFIG_OPTION_REF_SELECT_EXT_AIN3					((0x02U << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use AIN3 as the ADC reference voltage
+#define ADC_CONFIG_OPTION_REF_SELECT_EXT_AIN9					((0x03U << ADCCON1_REF_SEL_SHIFT) << ADC_CONFIG_OPTION_ADCCON1_OFFSET_SHIFT)			//Sets the ADC use AIN9 as the ADC reference voltage
 
 
 ////////////////////////////////////////////////////////////////////////////

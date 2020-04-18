@@ -56,6 +56,7 @@
 #define timer1_has_overflown()			(TCON_SB_TF1)				//True if timer 1 has overflown, false otherwise
 #define timer1_clear_overflow_flag()	sbit_clear(TCON_SB_TF1)		//Clear timer 1 overflow flag (auto-cleared if using an IRQ)
 #define timer1_set_t1_val(period)		T1 = period					//Update the value of TH1:TL1
+#define timer1_set_reload_val(val)      TH1 = val
 
 
 ////////////////////////////

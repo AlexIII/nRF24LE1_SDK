@@ -54,5 +54,8 @@ uint32_t uart_calc_actual_baud_rate_from_th1(uint8_t th1_reg_value, bool smod_bi
 	//       384 * (256 - TH1)
 	//
 	//The formula below also rounds to the nearest whole number
-	return (uint32_t)(((((uint32_t)(2 * ((smod_bit_value != 0) ? 2 : 1) * pwr_clk_mgmt_get_cclk_freq_in_hz())) / ((uint32_t)(384 * (256 - th1_reg_value)))) + 1) / 2);
+	return (uint32_t)(((
+             ((uint32_t)(2 * ((smod_bit_value != 0) ? 2 : 1) * pwr_clk_mgmt_get_cclk_freq_in_hz()))
+             / ((uint32_t)(384 * (256 - th1_reg_value)))
+         ) + 1) / 2);
 }
